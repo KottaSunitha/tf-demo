@@ -77,18 +77,3 @@ resource "aws_instance" "vm_test" {
  
 }
 
-
-# vpc, ig, natgateway, 2 public 2 private subnets, 2 rout tables 1 public route(ig-route) 1 private route(nat-route), 1 ecs clster, task definition
-# code commit repo, 
-
-# code build project for ECR
-
-# stages - code commit - dockefilr
-# code build sateg - image build and push to ECR
-# code deploy - connect to ec2, docker stop, docker rm, pick new tag from new code changes, using that docker run
-
-
-# how to stop all running containers
-
-# code pipeline 
-# using guthub actions login into ec2 and perform github actions to trigger a basic ci/cd pipleine
